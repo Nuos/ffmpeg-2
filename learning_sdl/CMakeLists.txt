@@ -1,0 +1,5 @@
+add_executable(sdl_learning main.cpp)
+find_package(SDL2)
+target_include_directories(sdl_learning PUBLIC ${SDL2_INCLUDE_DIRS})
+target_link_libraries(sdl_learning ${SDL2_LIBRARIES} "-framework Cocoa")
+add_executable(opencv_stream opencv_stream.cpp)

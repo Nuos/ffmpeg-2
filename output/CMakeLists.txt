@@ -1,0 +1,5 @@
+add_executable(image_streamer image_streamer.cpp)
+target_link_libraries(image_streamer ffmpeg ${OpenCV_LIBS})
+target_include_directories(image_streamer PUBLIC ${OpenCV_INCLUDE_DIRS})
+add_executable(mac_streamer mac_streamer.cpp)
+target_link_libraries(mac_streamer ffmpeg)
